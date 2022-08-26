@@ -1,0 +1,26 @@
+#include<iostream.h>
+class student
+{
+int r_no;
+char name[30];
+public:
+void get_data()
+{
+cout<<"Enter the rollno of student:";
+cin>>r_no;
+cout<<"Enter the name of student:";
+}
+void print_data()
+{
+cout<<"The rollno of student:"<<r_no;
+cout<<"The name of the student:"<<name;
+}
+};
+void main()
+{
+student s1,s2,s3;
+s1.get_data();
+s1.print_data();
+s2.get_data();
+s2.print_data();
+}
