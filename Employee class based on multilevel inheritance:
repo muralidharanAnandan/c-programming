@@ -1,0 +1,60 @@
+#include<iostream.h>
+#include<conio.h>
+class employee
+{
+int emp_id;
+char empname[30];
+public:
+void get_data()
+{
+cout<<"Enter employee ID:";
+cin>>emp_id;
+cout<<"Enter employee Name:";
+cin>>empname;
+}
+void print_data()
+{
+cout<<"ID OF THE EMPL0YEE:"<<emp_id;
+cout<<"\nNAME OF THE EMPLOYEE:"<<empname;
+}
+};
+class department:public employee
+{
+char dept[30];
+public:
+void get_data1()
+{
+cout<<"Enter the department of the employee:";
+cin>>dept;
+}
+void print_data1()
+{
+cout<<"\nDEPARTMENT OF THE EMPLOYEE:"<<dept;
+}
+};
+class roll:public department
+{
+char roll[30];
+public:
+void get_data2()
+{
+cout<<"Enter the roll of the employee:";
+cin>>roll;
+}
+void print_data2()
+{
+cout<<"\nROLL OF THE EMPLOYEE:"<<roll;
+}
+};
+void main()
+{
+clrscr();
+roll emp;
+emp.get_data();
+emp.get_data1();
+emp.get_data2();
+emp.print_data();
+emp.print_data1();
+emp.print_data2();
+getch();
+}
