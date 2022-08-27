@@ -1,0 +1,47 @@
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+int r_no;
+char name[30];
+public:
+void get_data()
+{
+cout<<"Enter the Rollno of the student:";
+cin>>r_no;
+cout<<"Enter the Name of the student:";
+cin>>name;
+}
+void print_data()
+{
+cout<<"NAME OF THE STUDENT:"<<name;
+cout<<"\nROLL NO OF THE STUDENT:"<<r_no;
+}
+}
+;
+class english:public student
+{
+int E_mark;
+public:
+void get_data1()
+{
+cout<<"\nEnter english mark of student:";
+cin>>E_mark;
+}
+void print_data1()
+{
+cout<<"ENGLISH MARK OF THE STUDENT:"<<E_mark;
+}
+}
+;
+
+void main()
+{
+clrscr();
+english s1;
+s1.get_data();
+s1.print_data();
+s1.get_data1();
+s1.print_data1();
+getch();
+}
